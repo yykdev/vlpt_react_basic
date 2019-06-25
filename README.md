@@ -15,14 +15,27 @@
 
 ### Node.js
 
-```
-$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+> curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+>
+> nvm install --lts
 
-$ nvm install --lts
-```
 
-## 새 react 프로젝트 만들기
+- 버전 확인 : node --version
 
-```
-npx create-react-app begin-react
-```
+### yarn
+
+> brew install yarn
+
+- 버전 확인 : yarn --version
+
+-----
+
+## react 프로젝트
+
+### 새 react 프로젝트 생성하기
+
+> npx create-react-app begin-react
+
+### 로컬 react 프로젝트 띄우기
+
+> yarn start
