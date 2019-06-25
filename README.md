@@ -83,3 +83,21 @@ React.createElement("div", null, React.createElement("b", null, "Hello,"), " ", 
     <div>test</div>
 </>
 ```
+
+3. JSX 내에서 자바스크립트 값을 보여주고 싶을 경우
+
+> 중괄호에 변수명을 담아 표시 한다. : {변수명}
+
+```
+function App() {
+  const name = 'react';
+  return (
+    <>
+      <Hello/>
+      <div>{name}</div>
+    </>
+  );
+}
+```
+
+
