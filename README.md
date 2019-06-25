@@ -100,10 +100,11 @@ function App() {
 }
 ```
 
-4. 엘리먼트의 인라인 스타일 지정 하기
+4. 엘리먼트의 스타일 지정 하기
 
 > 객체에 스타일 형식을 담아 표시 한다.
 
+- 인라인 방식
 ```
 function App() {
   const name = 'react';
@@ -118,6 +119,30 @@ function App() {
     <>
       <Hello/>
       <div style={style}>{name}</div>
+    </>
+  );
+}
+```
+
+- 클래스 css 방식
+
+```
+import './App.css';
+
+...
+
+import './App.css';
+
+function App() {
+  
+  ...
+
+  return (
+    <>
+      <Hello/>
+      <div style={style}>{name}</div>
+      <div className="gray-box"></div>
+      // 기존 HTML과 다르게 class 가 아닌 className 으로 선언해야 한다.
     </>
   );
 }

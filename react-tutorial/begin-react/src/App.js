@@ -1,6 +1,8 @@
 import React from 'react';
 import Hello from './Hello';
 
+import './App.css';
+
 function App() {
   const name = 'react';
   const style = {
@@ -14,6 +16,7 @@ function App() {
     <>
       <Hello/>
       <div style={style}>{name}</div>
+      <div className="gray-box"></div>
     </>
   );
 }
