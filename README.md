@@ -76,4 +76,10 @@ React.createElement("div", null, React.createElement("b", null, "Hello,"), " ", 
     <Hello/>
     <div>test</div>
 </div>
+
+=> Tip. 복수의 태그를 묶기 위해 불필요하게 태그를 선언 하지 말고 프래그먼트를 사용하여 묶어 주도록 한다.
+<>
+    <Hello/>
+    <div>test</div>
+</>
 ```
