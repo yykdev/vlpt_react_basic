@@ -21,3 +21,8 @@ $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh |
 $ nvm install --lts
 ```
 
+## 새 react 프로젝트 만들기
+
+```
+npx create-react-app begin-react
+```
