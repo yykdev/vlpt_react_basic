@@ -100,4 +100,25 @@ function App() {
 }
 ```
 
+4. 엘리먼트의 인라인 스타일 지정 하기
 
+> 객체에 스타일 형식을 담아 표시 한다.
+
+```
+function App() {
+  const name = 'react';
+  const style = {
+    backgroundColor: 'black',
+    color: 'aqua',
+    fontSize: 24,
+    padding: '1ren',
+  };
+
+  return (
+    <>
+      <Hello/>
+      <div style={style}>{name}</div>
+    </>
+  );
+}
+```
