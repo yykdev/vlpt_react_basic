@@ -47,3 +47,33 @@
 > JSX는 리액트에서 컴포넌트의 생김새를 정의 할 때 사용 하는 문법
 >
 > 얼핏 보기엔 HTML과 같이 생겼지만 실제적으론 자바스크립트 이다.
+>
+> BABEL 을 통해 자바스크립트로 변환 되어 빌드 된다.
+
+```
+- JSX
+
+<div><b>Hello,</b> <span>React</span></div>
+
+- BABEL 변환
+React.createElement("div", null, React.createElement("b", null, "Hello,"), " ", React.createElement("span", null, "React"));
+```
+
+### JSX 규칙
+1. 태그는 꼭 닫히는 태그로 종료 돼야 한다.
+ - input, br 태그나 시작태그와 종료 태그 사이에 아무것도 들어가지 않을 경우 self close tag 로 종료 한다. `ex) <input/>, <br/>`
+
+2. 두개 이상의 태그는 꼭 한개의 태그로 감싸져 있어야 한다.
+```
+- 오류
+
+<Hello/>
+<div>test</div>
+
+- 정상
+
+<div>
+    <Hello/>
+    <div>test</div>
+</div>
+```
